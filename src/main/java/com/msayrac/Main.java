@@ -8,26 +8,19 @@ public class Main {
     public static void main(String[] args) {
 
         // variables
-        int mat, fizik, kimya, turkce, tarih, muzik;
+        double kdv = 0.18;
+        double miktar;
+        double kdvMiktar;
 
-        //kullanıcıdan deger al
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Matematik Notunu Giriniz : ");
-        mat = input.nextInt();
-        System.out.println("Fizik Notunu Giriniz : ");
-        fizik = input.nextInt();
-        System.out.println("Kimya Notunu Giriniz : ");
-        kimya = input.nextInt();
-        System.out.println("Türkçe Notunu Giriniz : ");
-        turkce = input.nextInt();
-        System.out.println("Müzik Notunu Giriniz : ");
-        muzik = input.nextInt();
+        System.out.println("KDV hesaplanacak Tutarı Giriniz :");
+        miktar = input.nextDouble();
 
-        int toplam = mat + fizik + kimya + turkce + muzik;
-        double sonuc = toplam / 6;
-        System.out.println("Ortalamanız : " + sonuc);
-
+        System.out.println("Girilen Paranız : " + miktar);
+        kdvMiktar = miktar * kdv + miktar;
+        System.out.println("Kdv Hesaplanan Paranız : " + kdvMiktar);
+        System.out.println("KDV Tutar : " +miktar*kdv);
 
 
     }
