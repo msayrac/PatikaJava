@@ -8,18 +8,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-Book haryyPotter =new Book("HArry Potter",150);
-Book lordOfTheRings = new Book("Lord of the Rings",52);
 
-        System.out.println(lordOfTheRings.getName());
-        lordOfTheRings.setName("Lord 2");
-        System.out.println(lordOfTheRings.getName());
+        Student st1 = new Student("Mustafa", "Cetindag", "123", "Ankara", 50);
+        Student st2 = new Student("Patika", "Dev", "121", "İstanbul", 100);
+        Student st3 = new Student("Kodluyoruz", "Java", "222", "İzmir", 90);
 
+        Instructor teacther = new Instructor("Mahmut", "Cetin", "MAT");
+        Course mat = new Course("MAT101", "MAT", teacther);
+        Student[] students = {st1, st2, st3};
 
-
-
-
-
-
+        System.out.println(mat.getInstructor().getName());
     }
 }
