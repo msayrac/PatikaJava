@@ -8,15 +8,18 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Worker w1 = new Worker("Mustafa Cetin", "123 123 22 22", "mus@gmail.com");
 
-        Student st1 = new Student("Mustafa", "Cetindag", "123", "Ankara", 50);
-        Student st2 = new Student("Patika", "Dev", "121", "İstanbul", 100);
-        Student st3 = new Student("Kodluyoruz", "Java", "222", "İzmir", 90);
+        Academician a1 = new Academician("Ali Can", "125 22 55 44", "ali@gmail.com", "Fizik", "Dr");
 
-        Instructor teacther = new Instructor("Mahmut", "Cetin", "MAT");
-        Course mat = new Course("MAT101", "MAT", teacther);
-        Student[] students = {st1, st2, st3};
+        Worker m1 = new Memur("MEtin Cak", "123 654 ", "metin@gmgm", "Bigi islem", "9-15");
 
-        System.out.println(mat.getInstructor().getName());
+        OgretimGorevlisi o1 = new OgretimGorevlisi("Memet yıl", "m@gmail", "123 333 3333", "CENG", "Docent");
+
+        o1.giris();
+        o1.dersegir();
+
+
+
     }
 }
