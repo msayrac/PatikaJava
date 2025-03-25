@@ -16,8 +16,21 @@ public class Main {
 
         OgretimGorevlisi o1 = new OgretimGorevlisi("Memet yıl", "m@gmail", "123 333 3333", "CENG", "Docent");
 
-      o1.giris();
-      o1.giris("08:00");
+
+      Worker a2 = new Academician("Kodluyoruz","kodlu@gmail.com","123 666 6666","CENG","Ars Gor");
+
+//      a2.giris();
+//      a2.cikis();
+      // polimorfizim de override edilen metodlara erisebiliriz
+
+
+      //Polimorfizm -- Çok biçimlilik bır sınıfın cok biicmli sekilde davranması
+        // calısan akademisyen gibi davransın
+
+        //int[] loginUser = new int[5];
+        Worker[] loginUsers = {a1,a2,w1,m1,o1};
+
+        Worker.girisYapanlar(loginUsers);
 
 
 

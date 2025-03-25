@@ -31,10 +31,12 @@ public class Memur extends Worker {
     public void calis(){
 
         System.out.println(this.getNameSurname() + " çalısıyor");
-
-
     }
 
+    @Override
+    public void giris(){
+        System.out.println(this.getNameSurname()  + "  memur C kapısından giriş yaptı");
+    }
 
 
 }

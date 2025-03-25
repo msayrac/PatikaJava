@@ -44,10 +44,6 @@ public class Worker {
         System.out.println(this.nameSurname  + " üniversiteye giriş yaptı");
     }
 
-    public void giris(String girisSaati){
-        System.out.println(this.nameSurname  + " saat "+ girisSaati + " üniversiteye giris yaptı");
-    }
-
 
     public void cikis(){
         System.out.println(this.nameSurname  + " üniversiteye çıkış yaptı");
@@ -55,6 +51,25 @@ public class Worker {
 
     public void yemekhane(){
         System.out.println(this.nameSurname  + " yemekhaneye girdi");
-    }
+        }
+
+        public static void girisYapanlar(Worker[] loginUsers){
+
+        for (Worker worker:loginUsers){
+            worker.giris();
+
+        }
+
+
+        }
+
+
+
+
+
+
+
+
+
 
 }

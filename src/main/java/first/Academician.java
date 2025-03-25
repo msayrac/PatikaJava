@@ -33,7 +33,7 @@ public class Academician extends Worker {
 
     @Override
     public void giris(){
-        System.out.println(this.getNameSurname()  + " üniversiteye A kapısından giriş yaptı");
+        System.out.println(this.getNameSurname()  + " akademisyeni A kapısından giriş yaptı");
     }
 
 

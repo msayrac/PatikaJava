@@ -9,6 +9,6 @@ public class OgretimGorevlisi extends Academician{
 
     @Override
     public void giris(){
-        System.out.println(this.getNameSurname()  + " üniversiteye B kapısından giriş yaptı");
+        System.out.println(this.getNameSurname()  + "  görevlisi B kapısından giriş yaptı");
     }
 }
