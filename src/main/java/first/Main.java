@@ -16,8 +16,8 @@ public class Main {
 
         OgretimGorevlisi o1 = new OgretimGorevlisi("Memet yıl", "m@gmail", "123 333 3333", "CENG", "Docent");
 
-        o1.giris();
-        o1.dersegir();
+      o1.giris();
+      o1.giris("08:00");
 
 
 

@@ -30,4 +30,13 @@ public class Academician extends Worker {
     public void dersegir(){
         System.out.println(this.getNameSurname() + " derse giriş yaptı");
     }
+
+    @Override
+    public void giris(){
+        System.out.println(this.getNameSurname()  + " üniversiteye A kapısından giriş yaptı");
+    }
+
+
+
+
 }
