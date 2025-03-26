@@ -1,6 +1,6 @@
 package first;
 
-public class Memur extends Worker {
+public abstract class Memur extends Worker {
 
     private String department;
     private String mesai;

@@ -1,6 +1,6 @@
 package first;
 
-public class Worker {
+public abstract class Worker {
 
     private String nameSurname;
     private String phoneNumber;

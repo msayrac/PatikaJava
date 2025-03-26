@@ -1,6 +1,6 @@
 package first;
 
-public class Academician extends Worker {
+public abstract class Academician extends Worker {
 
     private String department;
     private String unvan;
@@ -27,9 +27,7 @@ public class Academician extends Worker {
         this.unvan = unvan;
     }
 
-    public void dersegir(){
-        System.out.println(this.getNameSurname() + " derse giriş yaptı");
-    }
+    public abstract void dersegir(String dersSaati);
 
     @Override
     public void giris(){
